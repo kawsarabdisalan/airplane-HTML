@@ -1,36 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Form Example</title>
+   <meta charset="UTF-8">
+   <title>Form Example</title>
+
 </head>
 <body>
-    <h1>Airline Form</h1>
-    <form action="#" method="post">
-        <!--Family and Given Names Boxes-->
-        <label>Family Name:* <input type="text" required></label><br>
-        <label>Middle Name: <input type="text" ></label><br>
-        <label>Given Name:* <input type="text" required></label><br>
-        <!--Radio Check Boxes-->
-        <label>Saluatations</label>
-        <div class="radiocheckbox">
-            <label><input type="radio"> MR. </label><br>
-            <label><input type="radio"> MS. </label><br>
-            <label><input type="radio"> MRS. </label><br>
-            <label><input type="radio"> REV. </label><br>
-            <label><input type="radio"> N/A </label><br>
-        </div>
-        <!--Telephone Number-->
-        <label>Phone Number: <input type="text"></label><br>
-        <!--Email addresss-->
-        <label>Email Address:* <input type="text" required></label><br>
-        <!--Check boxes for questions-->
-        <div class="checkboxquestions">
-            <label><input type="checkbox"> Subscribe to email notifications </label><br>
-            <label><input type="checkbox"> Subscribe for text messages notifications (if phone number availble) </label><br>
-            <label><input type="checkbox"> Subscribe for special offers for our reward members </label><br>
-            
-        </div>
-    </form>
+   <h1>Special Shark Registration Form</h1>
+	<p> *An asterisk signifies a required field. </p>
+   <form action="#" method="post">
+	<h2> Personal Information </h2>
+       <!--Family and Given Names Boxes-->
+       <label>*Family Name: <input type="text" required></label><br>
+       <label>  Middle Name: <input type="text" ></label><br>
+       <label>*Given Name: <input type="text" required></label><br>
+       <!--Radio Check Boxes-->
+      <label>Select a salutation: </label>
+      <div class="radiocheckbox">
+          <label><input type="radio"> MR. </label><br>
+          <label><input type="radio"> MS. </label><br>
+          <label><input type="radio"> MRS. </label><br>
+          <label><input type="radio"> REV. </label><br>
+          <label><input type="radio"> N/A </label><br>
+      </div>
+       <!-- Home Address -->
+       <!-- <label> Address* </label> <br> -->
+	<h2> Home Address </h2>
+       <label>*Country:
+           <select id="country" required>
+               <option value="U.S.">United States</option>
+               <option value="Canada">Canada</option>
+           </select>
+       </label> <br>
+       <label> *Street Address: <input type="text" required> </label> <br>
+       <label> *City: <input type="text" required></label> <br>
+       <label> *Zip Code: <input type="text" required></label> <br>
+
+
+      <label> *State:
+           <select id="state" required>
+               <!-- U.S. States -->
+               <option value="Select"> Select </option>
+               <option value="Alabama"> Alabama </option>
+               <option value="Alaska"> Alaska </option>
+               <option value="Arizona"> Arizona </option>
+               <option value="Arkansas"> Arkansas </option>
+               <option value="California"> California </option>
+               <option value="Colorado"> Colorado </option>
+               <option value="Connecticut"> Connecticut </option>
+               <option value="Delaware"> Delaware </option>
+               <option value="Florida"> Florida </option>
+               <option value="Georgia"> Georgia </option>
+               <option value="Hawaii"> Hawaii </option>
+               <option value="Idaho"> Idaho </option>
+               <option value="Illinois"> Illinois </option>
+               <option value="Indiana"> Indiana </option>
+               <option value="Iowa"> Iowa </option>
+               <option value="Kansas"> Kansas </option>
+               <option value="Kentucky"> Kentucky </option>
+               <option value="Louisiana"> Louisiana </option>
+               <option value="Maine"> Maine </option>
+               <option value="Maryland"> Maryland </option>
+               <option value="Massachusetts"> Massachusetts </option>
+               <option value="Michigan"> Michigan </option>
+               <option value="Minnesota"> Minnesota </option>
+               <option value="Mississippi"> Mississippi </option>
+               <option value="Missouri"> Missouri </option>
+               <option value="Montana"> Montana </option>
+               <option value="Nebraska"> Nebraska </option>
+               <option value="Nevada"> Nevada </option>
+               <option value="New Hampshire"> New Hampshire </option>
+               <option value="New Jersey"> New Jersey </option>
+               <option value="New Mexico"> New Mexico </option>
+               <option value="New York"> New York </option>
+               <option value="North Carolina"> North Carolina </option>
+               <option value="North Dakota"> North Dakota </option>
+               <option value="Ohio"> Ohio </option>
+               <option value="Oklahoma"> Oklahoma </option>
+               <option value="Oregon"> Oregon </option>
+               <option value="Pennsylvania"> Pennsylvania </option>
+               <option value="Rhode Island"> Rhode Island </option>
+               <option value="South Carolina"> South Carolina </option>
+               <option value="South Dakota"> South Dakota </option>
+               <option value="Tennessee"> Tennessee </option>
+               <option value="Texas"> Texas </option>
+               <option value="Utah"> Utah </option>
+               <option value="Vermont"> Vermont </option>
+               <option value="Virginia"> Virginia </option>
+               <option value="Washington"> Washington </option>
+               <option value="West Virginia"> West Virginia </option>
+               <option value="Wisconsin"> Wisconsin </option>
+               <option value="Wyoming"> Wyoming </option>
+
+
+               <!-- Canadian Provinces and Territories -->
+               <option value="Alberta"> Alberta </option>
+               <option value="British Columbia"> British Columbia </option>
+               <option value="Manitoba"> Manitoba </option>
+               <option value="New Brunswick"> New Brunswick </option>
+               <option value="Newfoundland and Labrador"> Newfoundland and Labrador </option>
+               <option value="Northwest Territories"> Northwest Territories </option>
+               <option value="Nova Scotia"> Nova Scotia </option>
+               <option value="Nunavut"> Nunavut </option>
+               <option value="Ontario"> Ontario </option>
+               <option value="Prince Edward Island"> Prince Edward Island </option>
+               <option value="Quebec"> Quebec </option>
+               <option value="Saskatchewan"> Saskatchewan </option>
+               <option value="Yukon"> Yukon </option>
+           </select>
+
+
+       </label>
+       <!-- Date of Birth -->
+       <!-- <br><label>Date of birth</label> -->
+	<h2> Date of Birth </h2>
+       <br><label>Month:
+           <select id="Month" required>
+               <option value="Select"> Select </option>
+               <option value="January">January</option>
+               <option value="February">February</option>
+               <option value="March">March</option>
+               <option value="April">April</option>
+               <option value="May">May</option>
+               <option value="June">June</option>
+               <option value="July">July</option>
+               <option value="August">August</option>
+               <option value="September">September</option>
+               <option value="October">October</option>
+               <option value="November">November</option>
+               <option value="December">December</option>
+           </select>
+       </label>
+       <br><label>Day:
+           <select id="Day" required>
+               <option value="Select"> Select </option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+               <option value="13">13</option>
+               <option value="14">14</option>
+               <option value="15">15</option>
+               <option value="16">16</option>
+               <option value="17">17</option>
+               <option value="18">18</option>
+               <option value="19">19</option>
+               <option value="20">20</option>
+               <option value="21">21</option>
+               <option value="22">22</option>
+               <option value="23">23</option>
+               <option value="24">24</option>
+               <option value="25">25</option>
+               <option value="26">26</option>
+               <option value="27">27</option>
+               <option value="28">28</option>
+               <option value="29">29</option>
+               <option value="30">30</option>
+               <option value="31">31</option>
+           </select>
+       </label>
+       <br><label> Year:
+           <select id="year" required>
+               <option value="Select"> Select </option>
+	           <option value="1980">1980</option>
+               <option value="1981">1981</option>
+               <option value="1982">1982</option>
+               <option value="1983">1983</option>
+               <option value="1984">1984</option>
+               <option value="1985">1985</option>
+               <option value="1986">1986</option>
+               <option value="1987">1987</option>
+               <option value="1988">1988</option>
+               <option value="1989">1989</option>
+               <option value="1990">1990</option>
+               <option value="1991">1991</option>
+               <option value="1992">1992</option>
+               <option value="1993">1993</option>
+               <option value="1994">1994</option>
+               <option value="1995">1995</option>
+               <option value="1996">1996</option>
+               <option value="1997">1997</option>
+               <option value="1998">1998</option>
+               <option value="1999">1999</option>
+               <option value="2000">2000</option>
+               <option value="2001">2001</option>
+               <option value="2002">2002</option>
+               <option value="2003">2003</option>
+               <option value="2004">2004</option>
+           </select>
+          
+       </label>
+       </label>
+	<h2> Contact Information </h2>
+       <!--Telephone Number-->
+       <br><label>Phone Number: <input type="text"></label><br>
+       <!--Email address-->
+       <label>*Email Address: <input type="text" required></label><br>
+       
+
+	<!--Check boxes for questions-->
+	<h2> Subscribe to Notifications </h2>
+       <div class="checkboxquestions">
+           <label><input type="checkbox"> Subscribe to email notifications </label><br>
+           <label><input type="checkbox"> Subscribe for text messages notifications (if phone number available) </label><br>
+           <label><input type="checkbox"> Subscribe for special offers for our reward members </label><br>
+       </div>
+       <!-- Password -->
+	<h2> Create a Password </h2>
+        <label>Password* <input type="password" id="password" minlength="8" required ></label>
+        <br><label> Confirm password* <input type="password" id="confirmPassword" minlength="8" required></label>
+       <input type="submit" value="Submit">
+   </form>
 </body>
-</html>
+
+
